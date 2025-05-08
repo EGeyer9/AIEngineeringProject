@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Engineering & AI Careers</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>Engineering + AI = The Future</h1>
+    <p>Click each card to explore how AI is reshaping real engineering jobs.</p>
+    <nav>
+      <a href="#" onclick="showSection('jobs')">Jobs</a>
+      <a href="#" onclick="showSection('efficiency')">Efficiency</a>
+      <a href="#" onclick="showSection('creativity')">Creativity</a>
+      <a href="#" onclick="showSection('human')">Human Responsibility</a>
+    </nav>
+  </header>
+
+  <main id="jobs" class="section"></main>
+
+  <!-- Efficiency Page -->
+  <section id="efficiency" class="info-page section hidden">
+    <h2><i class="fas fa-tachometer-alt"></i> Boosting Engineering Efficiency with AI</h2>
+    <p>AI is transforming engineering by automating calculations, simulating systems in real-time, and improving accuracy in every field. When AI takes over repetitive modeling or failure prediction, engineers can devote time to complex problem-solving and higher-level design.</p>
+    <ul>
+      <li><strong><i class="fas fa-cogs"></i> Mechanical:</strong> Digital twins run 24/7 tests on engines without wasting physical parts.</li>
+      <li><strong><i class="fas fa-bolt"></i> Electrical:</strong> Machine learning finds optimal circuit layouts and reduces energy waste.</li>
+      <li><strong><i class="fas fa-city"></i> Civil:</strong> Smart models track traffic, water flow, and load-bearing structures instantly.</li>
+    </ul>
+    <p>AI is the new backbone of efficiency, cutting waste and accelerating turnaround on complex systems.</p>
+  </section>
+
+  <!-- Creativity Page -->
+  <section id="creativity" class="info-page section hidden">
+    <h2><i class="fas fa-lightbulb"></i> Amplifying Creativity with AI</h2>
+    <p>AI doesn’t replace creativity — it supercharges it. Engineers no longer waste hours manually drawing hundreds of design iterations. Now, AI handles that and more, letting you dream bigger.</p>
+    <ul>
+      <li><strong><i class="fas fa-lightbulb"></i> Faster Brainstorming:</strong> Engineers can quickly generate and compare dozens of viable solutions with AI tools, helping them move from idea to innovation in a fraction of the time.</li>
+      <li><strong><i class="fas fa-drafting-compass"></i> Interface & Experience Design:</strong> Engineers can better focus on designing intuitive interfaces, custom physical forms, and interactive features that enhance user experience — now that AI handles complex background calculations.</li>
+      <li><strong><i class="fas fa-brain"></i> Intuitive Tools:</strong> Use AI like a creative partner to sketch and simulate ideas instantly.</li>
+    </ul>
+    <p>AI makes engineering feel more like art — but backed by precision, logic, and limitless possibilities.</p>
+  </section>
+
+  <!-- Human Responsibility Page -->
+  <section id="human" class="info-page section hidden">
+    <h2><i class="fas fa-scale-balanced"></i> Human Responsibility in the Age of AI</h2>
+    <p>AI is just a tool — but people choose how to use it. That means engineers must take the lead in using AI responsibly, ethically, and with care.</p>
+    <ul>
+      <li><strong><i class="fas fa-universal-access"></i> Equity:</strong> Ensure AI models are trained on inclusive data that doesn’t exclude anyone.</li>
+      <li><strong><i class="fas fa-gavel"></i> Regulation:</strong> Governments and engineers must work together to set boundaries and laws.</li>
+      <li><strong><i class="fas fa-chalkboard-teacher"></i> Education:</strong> It’s up to us to train the next generation to use AI as a tool, not a crutch.</li>
+      <li><strong><i class="fas fa-user-shield"></i> Accountability:</strong> Even if AI fails, humans are still responsible for its impact.</li>
+    </ul>
+    <p>Human ethics, judgment, and care are irreplaceable. Let’s lead AI — not be led by it.</p>
+  </section>
+
+  <footer>
+    <p>Created by Evan Geyer, a sophomore mechanical engineering major at UMass Amherst.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(el => el.classList.add('hidden'));
+      document.getElementById(id).classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
